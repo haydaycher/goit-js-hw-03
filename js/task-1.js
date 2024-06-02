@@ -1,5 +1,5 @@
 function slugify(title) {
-  const slug = title.trim().toLowerCase().replace(/\s+/g, "-");
+  const slug = title.trim().toLowerCase().split(" ").join("-");
   return slug;
 }
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
